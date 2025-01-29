@@ -38,3 +38,6 @@ def galeria(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def not_found(request):
+    return render(request, 'not_found.html')

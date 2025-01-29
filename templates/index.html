@@ -22,16 +22,16 @@
         <div class="header_top">
           <div class="container-fluid">
             <div class="contact_nav">
-              <a href="">
+              <a href="https://wa.me/393314406060">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call : +39 123 123 1234
+                  Contatti : +39 331 4406060
                 </span>
               </a>
-              <a href="">
+              <a href="{% url 'contact'%}">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  Email : castellina@gmail.com
+                  Email : acastellinadimonticchio@gmail.com
                 </span>
               </a>
             </div>
@@ -56,7 +56,7 @@
                     <a class="nav-link" href="{% url 'index'%}">Home<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about'%}">Cosa per fare</a>
+                    <a class="nav-link" href="{% url 'not_found'%}">Cosa per fare</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'galeria'%}">Galleria</a>
@@ -111,7 +111,7 @@
           </div>
           <div class="col-lg-7 col-md-6">
             <div class="img-box">
-              <img src="../static/src/575905453.jpg" alt="">
+              <img src="../static/src/quarto_casal.jpg" alt="">
             </div>
           </div>
         </div>
@@ -122,62 +122,92 @@
     <!-- service section -->
   
     <section class="service_section layout_padding">
-      <div class="container ">
+      <div class="container">
         <div class="heading_container heading_center">
-          <h2> Cosa per fare </h2>
+          <h2>Cosa per fare</h2>
         </div>
         <div class="row">
           <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box ">
-              <div class="img-box">
-                <img src="../static/src/575905453.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Cosa 1
-                </h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box ">
-              <div class="img-box">
-                <img src="../static/src/575905453.jpgg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Cosa 2
-                </h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
+            <div 
+              class="box"
+              style="
+                background-image: url('../static/src/campfelice.jpg');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+              "
+            >
+              <div style="
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+              ">
+                <h5>Campo felice</h5>
+                <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box ">
-              <div class="img-box">
-                <img src="../static/src/575905453.jpg" alt="" />
+            <div 
+              class="box"
+              style="
+                background-image: url('../static/src/campoimperatore.jfif');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+              "
+            >
+              <div style="
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+              ">
+                <h5>Campo imperatore</h5>
+                <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
               </div>
-              <div class="detail-box">
-                <h5>
-                  Cosa 3
-                </h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mx-auto">
+            <div 
+              class="box"
+              style="
+                background-image: url('../static/src/Rocca_di_Mezzo_panoramica.jpg');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+              "
+            >
+              <div style="
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+              ">
+                <h5>Roca di Mezzo</h5>
+                <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
               </div>
             </div>
           </div>
         </div>
         <div class="btn-box">
-          <a href="{% url 'about'%}">
+          <a href="{% url 'about' %}">
             Scopri più
           </a>
         </div>
@@ -187,7 +217,7 @@
     <!-- end service section -->
   
     <!-- client section -->
-  
+<!-- 
     <section class="client_section ">
       <div class="container">
         <div class="heading_container heading_center">
@@ -309,7 +339,7 @@
         </div>
       </div>
     </section>
-  
+-->
     <!-- end client section -->
   
     <!-- contact section -->
@@ -318,26 +348,27 @@
       <div class="container">
         <div class="heading_container">
           <h2>
-            Contatti Noi
+            Contact Us
           </h2>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <form action="">
+            <form action="{% url 'contact' %}" method = "post">
+              {% csrf_token %}
               <div>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Name" name="name" id="name" required />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Phone Number" name="phone" id="phone" required />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email" id="email" required />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" name="message" id="message" required />
               </div>
               <div class="d-flex ">
-                <button>
+                <button type="submit">
                   SEND
                 </button>
               </div>
@@ -368,37 +399,37 @@
             <div class="info_items">
               <div class="row">
                 <div class="col-md-4">
-                  <a href="">
+                  <a href="https://www.google.com/maps?hl=pt-BR&gl=it&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x132fd53e94d307b9:0xff3f62977f501f07">
                     <div class="item ">
                       <div class="img-box ">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
                       <p>
-                        Lorem Ipsum is simply dummy text
+                        Via di Civita, 67100 Monticchio AQ
                       </p>
                     </div>
                   </a>
                 </div>
                 <div class="col-md-4">
-                  <a href="">
+                  <a href="https://wa.me/393314406060">
                     <div class="item ">
                       <div class="img-box ">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                       </div>
                       <p>
-                        +02 1234567890
+                        +39 331 4406060
                       </p>
                     </div>
                   </a>
                 </div>
                 <div class="col-md-4">
-                  <a href="">
+                  <a href="{% url 'contact'%}">
                     <div class="item ">
                       <div class="img-box">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                       </div>
                       <p>
-                        demo@gmail.com
+                        acastellinadimonticchio@gmail.com
                       </p>
                     </div>
                   </a>
@@ -422,7 +453,7 @@
           <a href="">
             <i class="fa fa-youtube" aria-hidden="true"></i>
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/lacastellinadimonticchio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </div>
